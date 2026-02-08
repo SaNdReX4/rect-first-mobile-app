@@ -24,7 +24,7 @@ type ProductsType = {
   };
 };
 
-export default function App() {
+export default function Index() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
