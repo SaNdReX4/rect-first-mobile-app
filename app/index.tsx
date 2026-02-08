@@ -9,6 +9,20 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+type ProductsType = {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+};
+
 export default function App() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
