@@ -1,3 +1,4 @@
+import { Stack } from "expo-router";
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -86,6 +87,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Stack.Screen options={{ title: "მაღაზია", headerShown: true }} />
       <FlatList
         data={products}
         renderItem={renderItem}
@@ -101,6 +103,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f5f5f5",
+    alignItems: "center",
+    justifyContent: "center",
   },
   center: {
     flex: 1,
